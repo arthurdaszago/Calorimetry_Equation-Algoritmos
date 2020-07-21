@@ -6,7 +6,7 @@ Matriz é uma estrutura 2D (duas dimensões, sendo uma altura e outra largura) q
 Inicialmente, os contornos (extremidades) da matriz serão de valor 0 e, quanto mais perto do centro, teremos valores aumentando exponencialmente.
 Um exemplo é mostrado abaixo.
 <div align="center">
-    ![Equação de calor aplicada no gráfico](img/heatmap.png)
+    <img src ="img/heatmap.png" width="300px"></img>
 </div>
 
 ### Resumo 
