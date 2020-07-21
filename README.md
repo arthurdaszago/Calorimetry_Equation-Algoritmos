@@ -1,5 +1,5 @@
 # Calorimetry_Equation-Alg
-## Trabalho final de Algoritmos
+Trabalho final de Algoritmos
 
 ## Problema - equação simples de calor
 
