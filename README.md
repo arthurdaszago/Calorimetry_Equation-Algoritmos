@@ -8,7 +8,7 @@ Inicialmente, os contornos (extremidades) da matriz serão de valor 0 e, mais pe
 Um exemplo é mostrado na imagem 1.
 <div align="center">
     <h3>Imagem 1 - Calor distribuido do centro para as bordas</h3>
-    <img src ="img/heatmap.png" width="275px"></img>
+    <img src ="img/heatmap.png" width="350px"></img>
 </div>
 
 ### Resumo 
