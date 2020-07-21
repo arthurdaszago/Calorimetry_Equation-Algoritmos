@@ -5,9 +5,10 @@ Trabalho final de Algoritmos desenvolvido na matéria de CCO
 Matriz é uma estrutura 2D (duas dimensões, sendo uma altura e outra largura) que armazenará valores variando de 0 á qualquer valor acima de 0. 
 Inicialmente, os contornos (extremidades) da matriz serão de valor 0 e, quanto mais perto do centro, teremos valores aumentando exponencialmente.
 Um exemplo é mostrado abaixo.
+| | | |
+||:------:||
+||![Equação de calor aplicada no gráfico](img/heatmap.png)||
 
-![Equação de calor aplicada no gráfico](img/heatmap.png)
-|:------:|
 ### Resumo 
 
 ### Metodologia
