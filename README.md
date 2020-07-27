@@ -9,8 +9,8 @@ Um exemplo é mostrado na figura 1.
     <h3>Figura 1 - Exemplo didático de variação de cores por valor. Quanto mais para as extremidades, menor é o valor, azul. Quanto mais próximo do centro, maior é o valor, vermelho.</h3>
     <img src ="img/heatmap.png" width="350px"></img>
 </div>
-Inicialmente, neste problema, as linhas e as colunas dos contornos (extremidades) da matriz serão de valor 0 e, a partir destas ao centro, teremos valores crescendo gradativamente. Tais valores maiores que 0 serão definidos por uma função inicial a partir dos índices da matriz, de modo que o centro tenha os maiores valores.
-Após o inicialização da matriz com valores, um algoritmo fará um remapeamento dos valores, os quais sofrerão uma subtração como forma de "resfriamento". .  
+Inicialmente, neste problema, as linhas e as colunas dos contornos (extremidades) da matriz serão de valor 0 e, a partir destas ao centro, teremos valores crescendo gradativamente, de modo que o centro tenha os maiores valores. Tais valores maiores serão definidos por uma função inicial com índices da matriz, que serão normalizados até 1. 
+Após o inicialização da matriz com valores, um algoritmo fará mapeamentos onde os valores sofrerão uma taxa de decaimento como forma de "resfriamento". Este processo será executado 10 vezes, na qual a ultima execução terá os menores no centro e, consequentemente, o tempo em que a chapa estará mais fria entre as outras.      
 
 ### Resumo 
 
