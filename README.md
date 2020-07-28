@@ -26,5 +26,14 @@ O método é dividido em etapas que seguem desde a implementação de partes at�
     <img src ="img/método.png" width="550px"></img>
 </div>
 
+#### Implementação das partes
+
+#### Implementação de funções
+
+#### Encontrar a constante ideal
+
+#### Avaliação do código e das funções
+
+
 ### Resultados e discussão
 
