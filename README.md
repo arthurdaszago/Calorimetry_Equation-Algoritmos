@@ -23,7 +23,7 @@ O método é dividido em etapas que seguem desde a implementação de partes at�
 
 <div align="center">
     <h3>Figura 2 - Visão geral do método</h3>
-    <img src ="img/método.png" width="550px"></img>
+    <img src ="img/método.png" width="650px"></img>
 </div>
 
 #### Implementação das partes
