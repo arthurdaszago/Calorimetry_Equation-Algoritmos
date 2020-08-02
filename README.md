@@ -38,7 +38,7 @@ O método é dividido em etapas que seguem desde a implementação de partes at�
 ### Resultados e discussão
 
 <div width="100%" align="center">
-    <img src="img/heatmaps/heatmap_0.png" align="center" width="100%">
+    <img src="img/heatmaps/heatmap_0.png" align="center" width="40%">
     <div width="90%" align="center">
         <img src="img/heatmaps/heatmap_10.png" width="30%">
         <img src="img/heatmaps/heatmap_20.png" width="30%">
@@ -54,5 +54,5 @@ O método é dividido em etapas que seguem desde a implementação de partes at�
         <img src="img/heatmaps/heatmap_80.png" width="30%">
         <img src="img/heatmaps/heatmap_90.png" width="30%">
     </div>  
-    <img src="img/heatmaps/heatmap_100.png" width="100%" align="center">
+    <img src="img/heatmaps/heatmap_100.png" width="40%" align="center">
 </div>
