@@ -42,19 +42,19 @@ Por fim, é adicionado o método principal (main()) onde o numero de linhas e co
 
 <div width="100%" align="center">
     <div width="100%" align="center">
-        <img src="img/heatmaps/heatmap_0.png" width="33%">
-        <img src="img/heatmaps/heatmap_10.png" width="33%">
-        <img src="img/heatmaps/heatmap_20.png" width="33%">
+        <img src="img/heatmaps/heatmap_0.png" width="32%">
+        <img src="img/heatmaps/heatmap_10.png" width="32%">
+        <img src="img/heatmaps/heatmap_20.png" width="32%">
     </div>   
     <div width="100%" align="center">
-        <img src="img/heatmaps/heatmap_30.png" width="33%">
-        <img src="img/heatmaps/heatmap_40.png" width="33%">
-        <img src="img/heatmaps/heatmap_50.png" width="33%">
+        <img src="img/heatmaps/heatmap_30.png" width="32%">
+        <img src="img/heatmaps/heatmap_40.png" width="32%">
+        <img src="img/heatmaps/heatmap_50.png" width="32%">
     </div> 
     <div width="100%" align="center">
-        <img src="img/heatmaps/heatmap_60.png" width="33%">
-        <img src="img/heatmaps/heatmap_70.png" width="33%">
-        <img src="img/heatmaps/heatmap_80.png" width="33%">
+        <img src="img/heatmaps/heatmap_60.png" width="32%">
+        <img src="img/heatmaps/heatmap_70.png" width="32%">
+        <img src="img/heatmaps/heatmap_80.png" width="32%">
     </div> 
     <div width="100%" align="center">
         <img src="img/heatmaps/heatmap_90.png" width="35%">
