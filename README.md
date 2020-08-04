@@ -18,7 +18,7 @@ Após o inicialização da matriz com valores, um algoritmo fará mapeamentos on
 
 ### Metodologia
 
-O problema abordado neste trabalho consiste no desenvolvimento de um algoritmo que faça a inicialização de uma matriz com valores, seguido de mapeamentos que aplicam um função de decaimento nos valores, que tendem a cair e, em uma imagem, apresentar uma chapa menos quente.
+O problema abordado neste trabalho consiste no desenvolvimento de um algoritmo que faça a inicialização de uma matriz com valores, seguido de mapeamentos que aplicam um função de decaimento nos valores, que tendem a cair e, em uma imagem, apresentar uma "chapa" menos quente.
 O método é dividido em etapas que seguem desde a implementação de partes até a avaliação do algoritmo. A visão geral do método é apresentada na figura 2, onde contém partes que serão detalhadas na sequência.  
 
 <div align="center">
@@ -27,7 +27,10 @@ O método é dividido em etapas que seguem desde a implementação de partes at�
 </div>
 
 #### Implementação das partes
-
+A primeira etapa da metodologia é a implementação das partes. Inicialmente, as bibliotecas são adicionadas, sendo elas stdio e stdlib. A primeira é utilizada para implementação de funções printf() e scanf(), responsáveis por imprimir e ler dados, respectivamente. A segunda é utilizada para implementação de funções malloc() e free(), responsáveis por alocar e liberar memória às matrizes, respectivamente.
+Após isto, é feito a declaração de uma struct, contendo uma matriz na forma de vetor como ponteiro. Nesta struct, foi adicionado um álias de Matrix.
+O próximo passo é declarar os módulos, sejam eles de ação e resultado. Os três módulos de resultado são: retorno de linhas, de colunas e do valor máximo da matriz inicial. Os cinco módulos de ação são: inicialização da matriz com valores, mapeamento de matrizes com valores menores á matriz antecedente, matriz de tempo (responsável pelo controle de índices das structs em que contém a matriz), imprimir todas as matrizes de cada tempo e liberação de memória alocada em cada matriz.
+Por fim, é adicionado o método principal (main()) onde o numero de linhas e colunas são recebidos por um input
 #### Implementação de funções
 
 #### Encontrar a constante ideal
@@ -35,26 +38,26 @@ O método é dividido em etapas que seguem desde a implementação de partes at�
 #### Avaliação do código e das funções
 
 
-### Resultados e discussão
+### Experimentos, resultados e discussão
 
 <div width="100%" align="center">
-    <div width="90%" align="center">
-        <img src="img/heatmaps/heatmap_0.png" width="30%">
-        <img src="img/heatmaps/heatmap_10.png" width="30%">
-        <img src="img/heatmaps/heatmap_20.png" width="30%">
+    <div width="100%" align="center">
+        <img src="img/heatmaps/heatmap_0.png" width="33%">
+        <img src="img/heatmaps/heatmap_10.png" width="33%">
+        <img src="img/heatmaps/heatmap_20.png" width="33%">
     </div>   
-    <div width="90%" align="center">
-        <img src="img/heatmaps/heatmap_30.png" width="30%">
-        <img src="img/heatmaps/heatmap_40.png" width="30%">
-        <img src="img/heatmaps/heatmap_50.png" width="30%">
+    <div width="100%" align="center">
+        <img src="img/heatmaps/heatmap_30.png" width="33%">
+        <img src="img/heatmaps/heatmap_40.png" width="33%">
+        <img src="img/heatmaps/heatmap_50.png" width="33%">
     </div> 
-    <div width="90%" align="center">
-        <img src="img/heatmaps/heatmap_60.png" width="30%">
-        <img src="img/heatmaps/heatmap_70.png" width="30%">
-        <img src="img/heatmaps/heatmap_80.png" width="30%">
+    <div width="100%" align="center">
+        <img src="img/heatmaps/heatmap_60.png" width="33%">
+        <img src="img/heatmaps/heatmap_70.png" width="33%">
+        <img src="img/heatmaps/heatmap_80.png" width="33%">
     </div> 
-    <div width="60%" align="center">
-        <img src="img/heatmaps/heatmap_90.png" width="30%">
-        <img src="img/heatmaps/heatmap_100.png" width="30%">
+    <div width="100%" align="center">
+        <img src="img/heatmaps/heatmap_90.png" width="35%">
+        <img src="img/heatmaps/heatmap_100.png" width="35%">
     </div> 
 </div>

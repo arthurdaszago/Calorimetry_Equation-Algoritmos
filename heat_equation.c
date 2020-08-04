@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <locale.h>
+
 #define TEMP 10 
 #define C_x 0.47
 #define C_y 0.47
