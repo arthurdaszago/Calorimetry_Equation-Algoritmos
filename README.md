@@ -29,18 +29,19 @@ O método é dividido em etapas que seguem desde a implementação de partes at�
 A primeira etapa da metodologia é a implementação das partes. Inicialmente, as bibliotecas são adicionadas para importação de funções especiais.
 Após isto, é feito a declaração de um registro, contendo uma matriz na forma de vetor com ponteiro. Neste registro, foi adicionado um álias de Matrix. Embora o conceito de registro é agrupar mais de um dado com mais de um tipos de dado, somente essa matriz de tipo float (decimal) foi adicionado.
 
-Dentro da função int main (função principal), teremos duas variaveis recebendo a quantidade de linhas e colunas, respectivamente, por chamada de módulos. Prosseguindo, o registro é tranformado em um vetor de tamanho N execuções (10 tempos)+1 para a matriz inicial, contendo no total 11 posições para os mapeamentos de valores.
-Após isto, o próximo e ultimo passo é chamar a sequência de módulos para finalizar o algoritmo, que são: matrix_inicialization, matrix_temp, print_all_matrix e free_matrixs.   
-
 O próximo passo é a prototipação, que é declarar os módulos com passagem de parâmetros, sejam eles por valor ou referência.
 O primeiro módulo de retorno criado é return_lines, que basicamente pede ao usuário o numero de linhas para as matrizes. O mesmo acontece para o segundo módulo, porém, pede ao usuário o número de colunas. O terceiro e ultimo módulo return_max_value de retorno percorrerá a matriz inicializada, afim de encontrar o maior valor, certamente localizado no centro da matriz.
 
-Foram usados cinco módulos de ação. O primeiro módulo matrix_inicialization setará os valores da matriz inicial utilizando a função de inicialização. Sabendo que os indices da matriz são usados para definir seus valores, a escala de valores será relativo ao número de linhas e colunas. Para isto, uma normalização entre 0 e 1 facilitará a visualização dos valores das matrizes com a adquirição do maior valor da matriz inicializada. Neste momento, uma variavel guardará o valor que dará retorno de return_max_value. A normalização basicamente é feita percorrendo toda a matriz inicializada e dividindo cada valor pelo max_value.
-Os módulos matrix_mapping e matrix_temp trabalham juntas. Na matrix_mapping, a primeira coisa a ser feita é zerar as bordas da matriz, uma vez que não há uma função que anulará os cantos como houve na matriz inicial. Caso não seja borda, a função de decaimento de valor será executada.
-A outra matriz chamada matrix_temp alocará memória para cada vetor de registro dentro de um for (laço de repetição), seguido da execução do módulo matrix_mapping. Em resumo, matrix_temp será chamada uma vez, mas com o for dentro, ele fará 10 vezes a alocação de memória do vetor de structs com o controle de t e, ainda, chamará 10 vezes a função matrix_mapping.
+Foram usados cinco módulos de ação. O primeiro módulo matrix_inicialization setará os valores da matriz inicial utilizando a função de inicialização. Sabendo que os indices da matriz são usados para definir seus valores, a escala de valores será relativo ao número de linhas e colunas. Para isto, uma normalização entre 0 e 1 facilitará a visualização dos valores das matrizes com a adquirição do maior valor da matriz inicializada. Neste momento, uma variavel max_value guardará o valor que dará retorno de return_max_value. A normalização basicamente é feita percorrendo toda a matriz inicializada e dividindo cada valor pelo max_value.
+
+Os módulos matrix_mapping e matrix_temp trabalham juntos. Na matrix_mapping, a primeira coisa a ser feita é zerar as bordas das matrizes, uma vez que não há uma função que anulará os cantos como houve na matriz inicial. Caso não seja borda, a função de decaimento de valor será executada. A outra matriz chamada matrix_temp alocará memória para cada vetor de registro dentro de um for (laço de repetição), seguido da execução do módulo matrix_mapping. Em resumo, matrix_temp será chamada uma vez na main, mas com o for dentro, ele fará 10 vezes a alocação de memória do vetor de structs com o controle de t e, ainda, chamará 10 vezes a função matrix_mapping.
+
 Após todo esse processo, o módulo print_all_matrix imprimirá todas as matrizes a cada 10 tempos e, por fim, o módulo free_matrixs libera a mémoria de todas as matrizes.
 
-Outra etapa é encontrar a constante ideal para x e y. Alguns experimentos foram feitos com 11 linhas e 11colunas, e encontrou-se como constante ideal 0.47 antes de valores mais próximos da borda serem maiores que outros mais próximos ao centro.
+Dentro da função int main (função principal), teremos duas variaveis recebendo a quantidade de linhas e colunas, respectivamente, por chamada de módulos. Prosseguindo, o registro é tranformado em um vetor de tamanho N execuções (10 tempos)+1 para a matriz inicial, contendo no total 11 posições para os mapeamentos de valores sem a necessidade de criar varias matrizes com identificadores diferentes.
+Após isto, o próximo e ultimo passo é chamar a sequência de módulos para finalizar o algoritmo, que são: matrix_inicialization, matrix_temp, print_all_matrix e free_matrixs.   
+
+Outra etapa é encontrar a constante ideal para x e y. Alguns experimentos foram feitos com 11 linhas e 11 colunas, e encontrou-se como constante ideal 0.47 antes de valores mais próximos da borda serem maiores que outros mais próximos ao centro.
 
 ### Resultados e discussão
 Como resultados, imagens foram geradas por facilitar a visualização da variação dos valores conforme a figura 3. Tais imagens geradas foram feitas com 11 linhas e 11 colunas e constante de x e y em 0.47. 
@@ -69,4 +70,4 @@ Como resultados, imagens foram geradas por facilitar a visualização da variaç
     <h5>Fonte: o autor</h5>
 </div>
 
-É possivel ver que as bordas se manteram na mesma entre todos os tempos, enquanto do centro para as bordas os valores decresceram gradativamente sem nenhum valor mais longe do meio ser maior que outros valores mais próximos do centro.   
+É possivel ver que as bordas se manteram na mesma entre todos os tempos, enquanto do centro para as bordas os valores decresceram gradativamente sem nenhum valor mais longe do meio ser maior que outros valores mais próximos do centro. Vale ressaltar que se as linhas e colunas forem diferentes destas apresentadas em imagens, uma alteração nas constantes será necessária.   
