@@ -39,11 +39,7 @@ void matrix_inicialization(Matrix *temp, int LIN, int COL){
 	int l,c;
 	for(l=0;l<LIN;l++){
 		for(c=0;c<COL;c++){
-			if((c==0)||(c==COL-1)){
-				temp[0].mat[l * COL + c]=0;
-			}else {
-				temp[0].mat[l * COL + c] = (l*(LIN - l -1)) * (c*(COL - c -1));			
-			}	
+			temp[0].mat[l * COL + c] = (l*(LIN - l -1)) * (c*(COL - c -1));			
 		}
 	}
 	int max=return_max_value(temp, COL, LIN);
