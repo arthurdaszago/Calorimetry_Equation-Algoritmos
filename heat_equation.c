@@ -9,7 +9,48 @@ typedef struct{
 	float *mat;	
 }Matrix;
 
-// 													    -----MODULES------
+// 													    -----MODULES IN PROTOTYPE------
+int return_lines();
+int return_colluns();
+int return_max_value(Matrix *temp, int COL, int LIN);
+void matrix_inicialization(Matrix *temp, int LIN, int COL);
+void normalize_matrix(Matrix *temp, int LIN, int COL);
+void matrix_mapping(Matrix *temp,int LIN,int COL,int tmp);
+void matrix_temp(Matrix *temp,int LIN, int COL);
+void print_all_matrix(Matrix *temp,int LIN,int COL);
+void free_matrixs(Matrix *temp);
+
+//                                                 		------MAIN------
+int main(){
+	//matrix dimension
+	int LIN = return_lines();
+	int COL = return_colluns();
+	
+	//creating vetor of Matrix(struct)
+	Matrix temp[TEMP];
+	//alocation of the initial matrix (in shape of vetor), at zero position of temp 
+	temp[0].mat = (int*) malloc (LIN*COL*sizeof(int));
+	
+	//calls method of inicialization of values 
+	matrix_inicialization(temp, LIN, COL);
+	
+	//calls method of normalize matrix
+	normalize_matrix(temp,LIN,COL);
+	
+	//calls method to return max value of temp matrix and print
+	int tamanhoMax = return_max_value(temp, COL, LIN);
+	//printf("Max: %.2f",tamanhoMax);
+	
+	//calls method that applies the function of mapping heat in the matrixs
+	matrix_temp(temp,LIN,COL);
+	
+	//print all matrix tabulated
+	print_all_matrix(temp,LIN,COL);
+	
+	//release all allocated memory
+	free_matrixs(temp);
+	
+}
 
 int return_lines(){
 	int l;
@@ -41,15 +82,16 @@ void matrix_inicialization(Matrix *temp, int LIN, int COL){
 		for(c=0;c<COL;c++){
 			temp[0].mat[l * COL + c] = (l*(LIN - l -1)) * (c*(COL - c -1));			
 		}
-	}
-	int max=return_max_value(temp, COL, LIN);
-	for(l=1;l<LIN-1;l++){
-		for(c=1;c<COL-1;c++){
-				temp[0].mat[l * COL + c]/=max;			
-		}	
 	}	
 }
-
+void normalize_matrix(Matrix *temp, int LIN, int COL){
+	int max=return_max_value(temp, COL, LIN),l,c;
+	for(l=1;l<LIN-1;l++){
+		for(c=1;c<COL-1;c++){
+			temp[0].mat[l * COL + c]/=max;			
+		}	
+	}
+}
 void matrix_mapping(Matrix *temp,int LIN,int COL,int tmp){
 	int l,c;
 	for(l=0;l<LIN;l++){
@@ -90,32 +132,4 @@ void free_matrixs(Matrix *temp){
 	for(i=0;i<=TEMP;i++){
 		free(temp[i].mat);
 	}
-}
-//                                                 		------MAIN------
-int main(){
-	//matrix dimension
-	int LIN = return_lines();
-	int COL = return_colluns();
-	
-	//creating vetor of Matrix(struct)
-	Matrix temp[TEMP];
-	//alocation of the initial matrix (in shape of vetor), at zero position of temp 
-	temp[0].mat = (int*) malloc (LIN*COL*sizeof(int));
-	
-	//calls method of inicialization of values 
-	matrix_inicialization(temp, LIN, COL);
-	
-	//calls method to return max value of temp matrix and print
-	int tamanhoMax = return_max_value(temp, COL, LIN);
-	//printf("Max: %.2f",tamanhoMax);
-	
-	//calls method that applies the function of mapping heat in the matrixs
-	matrix_temp(temp,LIN,COL);
-	
-	//print all matrix tabulated
-	print_all_matrix(temp,LIN,COL);
-	
-	//release all allocated memory
-	free_matrixs(temp);
-	
 }
